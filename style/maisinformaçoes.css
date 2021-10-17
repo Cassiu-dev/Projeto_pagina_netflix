@@ -3,11 +3,9 @@
     --preta: #141414;
 }
 
-
-
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -46,29 +44,36 @@ header nav a:hover{
     color: #fff;
 }
 
-/*Relacionado ao filme principal */
+.container{
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
-.filme-principal{
-    font-size: 16px;
-    height: 400px;
-    background :linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(/Projeto_netflix/img/capa-house.jpg);
-    background-size: cover;
+.logo-informacao{
+text-align: center;
+margin-top: 20px;   
+}
+
+.informacoes{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+.informacoes .container{
+    width: 80%;    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
-.filme-principal .descricao{
-    margin-bottom: 20px;
-    margin-top: 10px;
+.texto{
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
-.titulo{
-    font-size: 40px;
-    margin-top:15%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+
 
 .botao{
     background-color: rgba(0,0,0,.50);
@@ -79,6 +84,8 @@ header nav a:hover{
     font-size: 12px;
     cursor: pointer;
     transition: .3s ease all;
+    font-size: 20px;
+    margin-top: 25px;
 }
 
 .botao i{
@@ -91,47 +98,25 @@ header nav a:hover{
     color:black;
 }
 
-.container{
+
+
+@media screen and (max-width: 700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        
+    }
+
+    .informacoes{
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .filmes-populares{
+        text-align: center;
+        margin-top: 10px;
+    }
     
-    margin-left: 20px;
-    margin-right: 20px;
-    
-}
-
-.filme-principal .container{
-    width: 70%;
-}
-
-.box-filme{
-    height: 100%;
-    width: 100%;
-    display: block;
-}
-
-.carrosil-filmes{
-    margin-top: 5px;
-}
-
-.filmes-populares{
-    text-align: center;
-    margin: 30px 10px;
-}
-
-
-footer .container{
-    display: flex;    
-    justify-content: center; 
-    margin: 20px;   
-
-}
-
-footer p{
-    margin: 15px;
-}
-
-footer a{
-    margin: 15px;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
 }
